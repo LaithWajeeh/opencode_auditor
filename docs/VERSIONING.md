@@ -24,13 +24,13 @@ During initial development, major stays at `0`: `v0.MINOR.PATCH`.
 
 ## Bootstrap URL
 
-Users pin the bootstrap URL to a specific tag:
+Pin the bootstrap URL to the latest stable tag:
 
-```
-curl -fsSL https://raw.githubusercontent.com/CascadeSTEAM/opencode_auditor/v1.0.0/bootstrap.sh | bash
+```text
+curl -fsSL https://raw.githubusercontent.com/CascadeSTEAM/opencode_auditor/v0.9.0/bootstrap.sh | bash
 ```
 
-`main` branch is for development — pin to latest tag for stability.
+Replace `v0.9.0` with the latest tag from the [releases page](../releases).
 
 ## v1.0.0 Release Criteria
 

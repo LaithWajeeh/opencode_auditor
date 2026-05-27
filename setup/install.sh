@@ -31,6 +31,7 @@ mkdir -p "$GLOBAL_CONFIG_DIR"
 
 # --- Create empty global config if it doesn't exist ---
 if [[ ! -f "$GLOBAL_CONFIG" ]]; then
+  # shellcheck disable=SC2016
   echo '{ "$schema": "https://opencode.ai/config.json" }' > "$GLOBAL_CONFIG"
   echo "Created $GLOBAL_CONFIG"
 fi
@@ -194,4 +195,5 @@ echo "To verify merged config:"
 echo "  cat $GLOBAL_CONFIG | jq .permission"
 echo ""
 echo "To undo permissions later:"
-echo "  TMP_UNDO=$(mktemp) && jq 'del(.permission)' "$GLOBAL_CONFIG" > "$TMP_UNDO" && mv "$TMP_UNDO" "$GLOBAL_CONFIG""
+# shellcheck disable=SC2016
+echo '  TMP_UNDO=$(mktemp) && jq '\''del(.permission)'\'' "$GLOBAL_CONFIG" > "$TMP_UNDO" && mv "$TMP_UNDO" "$GLOBAL_CONFIG"'

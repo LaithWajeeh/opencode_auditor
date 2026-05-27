@@ -10,8 +10,7 @@ exit 0
 fi
 
 # Verify the script parses correctly
-bash -n "$INSTALL_SCRIPT"
-if [ $? -ne 0 ]; then
+if ! bash -n "$INSTALL_SCRIPT"; then
 echo "install.sh has syntax errors."
 exit 1
 fi

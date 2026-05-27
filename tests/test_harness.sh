@@ -2,7 +2,8 @@
 
 # Test harness for codebase
 
-function main() {
+main()
+{
     echo 'Running basic tests'
 }
-main()
+main
