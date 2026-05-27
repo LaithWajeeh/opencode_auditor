@@ -30,7 +30,7 @@ Pin the bootstrap URL to the latest stable tag:
 curl -fsSL https://raw.githubusercontent.com/CascadeSTEAM/opencode_auditor/v0.9.0/bootstrap.sh | bash
 ```
 
-Replace `v0.9.0` with the latest tag from the [releases page](../releases).
+Replace `v0.9.0` with the latest tag from the [releases page](https://github.com/CascadeSTEAM/opencode_auditor/releases).
 
 ## v1.0.0 Release Criteria
 
